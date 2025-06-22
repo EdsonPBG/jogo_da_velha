@@ -1,0 +1,79 @@
+/* Centraliza todo o conteúdo do body na tela */
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Container principal do jogo (Game) */
+.game {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 15px;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+}
+
+/* Mensagem de status (Próximo jogador / Vencedor) */
+.status {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Linha do tabuleiro */
+.boardRow {
+    display: flex;
+    gap: 2px; /* Espaço pequeno entre os quadrados */
+    margin-bottom: 2px; /* Espaço entre as linhas */
+}
+
+/* Cada quadrado individual */
+.square {
+    background-color: #eee; /* Cor de fundo clara para o quadrado */
+    color: #333; /* Cor do texto (X/O) escura para contraste */
+    border: 1px solid #999; /* Borda visível */
+    width: 80px; /* Tamanho do quadrado */
+    height: 80px; /* Garante que é um quadrado */
+    font-size: 2.5em; /* Tamanho do texto X/O */
+    display: flex; /* Para centralizar o X/O */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+/* Estilos para os botões do histórico */
+ol {
+    padding: 0;
+    list-style: none; /* Remove marcadores de lista */
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li button {
+    background-color: #007bff; /* Azul padrão para botões */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+/* Efeitos de hover simples */
+.square:hover {
+    background-color: #ddd; /* Escurece um pouco ao passar o mouse */
+}
+
+li button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
